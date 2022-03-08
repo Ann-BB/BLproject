@@ -8,7 +8,7 @@ import { Component, OnInit, HostListener, Output, EventEmitter } from '@angular/
 export class HeadertextComponent implements OnInit {
 
   constructor() { }
-  @Output() updateInfo = new EventEmitter<string>();
+  @Output() updateData = new EventEmitter<string>();
 
 
   ngOnInit(): void {
