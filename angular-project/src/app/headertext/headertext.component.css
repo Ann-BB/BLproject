@@ -63,27 +63,27 @@
   cursor: pointer;
 }
 
-.header__background {
+.header-bg {
   background-color: rgba(32, 36, 46, 0.65);
 }
 
-.change-to-eng {
+.to-eng {
   flex-flow: row-reverse;
 }
-.change-to-eng .english {
+.to-eng .english {
   width: 22px !important;
 }
-.change-to-eng .georgian {
+.to-eng .georgian {
   width: 0 !important;
 }
 
-.change-to-geo {
+.to-geo {
   flex-flow: row;
 }
-.change-to-geo .english {
+.to-geo .english {
   width: 0 !important;
 }
-.change-to-geo .georgian {
+.to-geo .georgian {
   width: 22px !important;
 }
 
