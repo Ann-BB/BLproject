@@ -1,0 +1,33 @@
+<div class="textbox">
+    <div class="textbox-content" *ngFor=" let item of textboxContent">
+        <div class="textbox-item">
+            <img src="{{item.img}}" alt="">
+            <div class="fogeo" *ngIf="selectedLanguage === 'geo'">
+                {{item.geoInfo}}
+            </div>
+
+            <div class="foeng" *ngIf="selectedLanguage === 'eng'">
+                {{item.engInfo}}
+            </div>
+        </div>
+    </div>
+</div>
+<div class="playbox">
+  <a
+      href="https://www.betlive.com/"
+      class="playbox-btn"
+      *ngIf="selectedLanguage === 'geo'"
+      target="_blank"
+  >
+      ითამაშე
+  </a>
+  <a
+  href="https://www.betlive.com/"
+      class="playbox-btn"
+      *ngIf="selectedLanguage === 'eng'"
+      target="_blank"
+  >
+      Play
+  </a>
+</div>
+

@@ -5,12 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeadertextComponent } from './headertext/headertext.component';
 import { BoxLgComponent } from './box-lg/box-lg.component';
+import { TextboxComponent } from './textbox/textbox.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeadertextComponent,
-    BoxLgComponent
+    BoxLgComponent,
+    TextboxComponent
   ],
   imports: [
     BrowserModule,
