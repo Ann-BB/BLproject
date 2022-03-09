@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { BoxLgComponent } from './box-lg.component';
+import { MiddletextComponent } from './middletext.component';
 
-describe('BoxLgComponent', () => {
-  let component: BoxLgComponent;
-  let fixture: ComponentFixture<BoxLgComponent>;
+describe('MiddletextComponent', () => {
+  let component: MiddletextComponent;
+  let fixture: ComponentFixture<MiddletextComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ BoxLgComponent ]
+      declarations: [ MiddletextComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(BoxLgComponent);
+    fixture = TestBed.createComponent(MiddletextComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

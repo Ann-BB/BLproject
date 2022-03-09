@@ -1,0 +1,15 @@
+<div class="textboxone">
+  <div class="textboxone-icon">
+      <img src="../../assets/images/error-icon.png" alt="alert">
+  </div>
+
+  <div class="textboxone-content" *ngIf="selectedLanguage === 'geo'">
+      <p>{{textboxone.geo}}</p>
+      <p>{{textboxtwo.geo}}</p>
+  </div>
+
+  <div class="textboxone-content" *ngIf="selectedLanguage === 'eng'">
+      <p>{{textboxone.eng}}</p>
+      <p>{{textboxtwo.eng}}</p>
+  </div>
+</div>

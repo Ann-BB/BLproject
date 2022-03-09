@@ -1,5 +1,6 @@
 <div [style.fontFamily]="fontFamily">
   <app-headertext (updateData)="updateData($event)"></app-headertext>
-  <app-box-lg></app-box-lg>
   <app-textbox [selectedLanguage]="language"></app-textbox>
+  <app-cashtext [selectedLanguage]="language"></app-cashtext>
+  <app-middletext [selectedLanguage]="language"></app-middletext>
 </div>

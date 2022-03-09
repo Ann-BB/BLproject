@@ -1,0 +1,43 @@
+<div class="cashtext">
+  <img src="../../assets/images/cashtext-line.png" class="cashtext-img">
+  <div class="cashtext-content" *ngIf="selectedLanguage === 'geo'">
+      <div class="cashtext-htext" [innerHTML]="cashtext.geo">
+      </div>
+      <div class="cashtext-equals">
+          <div class="cashtext-item itemone">
+              <div class="cashtext-text">
+                  {{equalone.geo}}
+              </div>
+               {{oneprice.geo}}
+          </div>
+          <img src="../../assets/images/equals.png" alt="">
+          <div class="cashtext-item itemtwo">
+              {{twoPrice}}
+              <div class="cashtext-text">
+                  {{equaltwo.geo}}
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <div class="cashtext-content" *ngIf="selectedLanguage === 'eng'">
+      <div class="cashtextheader" [innerHTML]="cashtext.eng">
+      </div>
+      <div class="cashtext-equals">
+          <div class="cashtext-item itemone">
+              <div class="cashtext-text">
+                  {{equalone.eng}}
+              </div>
+               {{oneprice.eng}}
+          </div>
+          <img src="../../assets/images/equals.png" alt="">
+          <div class="cashtext-item itemtwo">
+              {{twoPrice}}
+              <div class="cashtext-text">
+                  {{equaltwo.eng}}
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+

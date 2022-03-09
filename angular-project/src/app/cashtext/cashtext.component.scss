@@ -1,0 +1,164 @@
+.cashtext {
+  margin-top: 30px;
+
+
+  &-content {
+      position: relative;
+      height: 364px;
+      border-radius: 3px;
+      background-color: rgba(204,84,84,.051);
+      box-shadow: 3px 8px 103px 0 rgb(0 0 0 / 55%);
+      max-width: 825px;
+      margin: auto;
+      top: -5px;
+      padding-top: 30px;
+  }
+
+  &-img {
+      max-width: 965px;
+      margin: 0 auto;
+      display: block;
+  }
+
+  &-htext {
+      font-size: 20px;
+      text-align: center;
+      color: #fff;
+      font-weight: bolder;
+
+      ::ng-deep span {
+          color: #fdb936;
+      }
+  }
+
+  &-equals {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 70px;
+      margin-top: 40px;
+      font-weight: bold;
+
+      .itemtwo {
+          color: #fff;
+          background: linear-gradient(45deg,#3c22bb 0,#630ac2 85%);
+      }
+  }
+
+  &-item {
+      width: 190px;
+      height: 160px;
+      border-radius: 3px;
+      text-align: center;
+      font-size: 58px;
+      line-height: 82px;
+      background-color: #fff;
+      color: #7c2dc5;
+  }
+
+  &-text {
+      font-size: 1.1rem;
+      width: 90%;
+      height: 60px;
+      margin: 10px auto;
+      border-radius: 3px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: rgba(0,0,0,.078);
+      line-height: 1.2em;
+      text-align: center;
+      font-weight: bold;
+  }
+}
+
+
+
+
+@media (max-width: 1120px) {
+  .cashtext {
+      width: 100%;
+      max-width: none;
+
+      &-img {
+        max-width: 685px;
+    }
+      &-content {
+          max-width: 690px;
+      }
+  }
+}
+
+@media (max-width: 892px) {
+  .cashtext {
+      &-content {
+          height: auto;
+          padding-bottom: 20px;
+      }
+  }
+}
+
+@media (max-width: 767px) {
+  .cashtext {
+
+      &-img {
+          max-width: 520px;
+      }
+
+      &-content {
+          max-width: 510px;
+          padding: 20px;
+      }
+  }
+}
+
+@media (max-width: 560px) {
+  .cashtext {
+      padding: 0;
+
+      &-img {
+          max-width: 520px;
+          width: 100%;
+      }
+
+      &-content {
+          font-size: 11px;
+      }
+
+      &-htext {
+          ::ng-deep h2 {
+              font-size: 18px;
+          }
+      }
+
+      &-text {
+          ::ng-deep {
+              font-size: 13px;
+          }
+      }
+
+      &-item {
+          font-size: 24px;
+          height: 100px;
+          width: 140px;
+          line-height: 20px;
+          padding-bottom: 105px;
+      }
+
+      &-equals {
+          gap: 10px;
+
+          img {
+              width: 30px;
+          }
+      }
+
+      .itemtwo {
+          line-height: 42px;
+
+          &-text {
+              font-size: 18px;
+          }
+      }
+  }
+}
