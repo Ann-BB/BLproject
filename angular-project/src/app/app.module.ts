@@ -8,6 +8,7 @@ import { TextboxComponent } from './textbox/textbox.component';
 import { SliderboxComponent } from './sliderbox/sliderbox.component';
 import { CashtextComponent } from './cashtext/cashtext.component';
 import { MiddletextComponent } from './middletext/middletext.component';
+import { LasttextComponent } from './lasttext/lasttext.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { MiddletextComponent } from './middletext/middletext.component';
     TextboxComponent,
     SliderboxComponent,
     CashtextComponent,
-    MiddletextComponent
+    MiddletextComponent,
+    LasttextComponent
   ],
   imports: [
     BrowserModule,
