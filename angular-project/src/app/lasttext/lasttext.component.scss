@@ -1,0 +1,86 @@
+.lasttext {
+  width: 75%;
+    height: auto;
+    margin: 23px auto 0;
+
+  &-firsttext {
+      position: relative;
+      border-radius: 5px;
+      margin-bottom:  23px;
+      color: #fff;
+
+      .textcontext {
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          background: #090f2c;
+          padding: 10px 10px 10px 35px;
+          cursor: pointer;
+
+          .watch {
+              width: 50px;
+              height: 50px;
+              background-position: center;
+              background-size: auto;
+              background-repeat: no-repeat;
+              border-radius: 100%;
+              cursor: pointer;
+          }
+
+          h3 {
+              position: relative;
+              top: 5px;
+          }
+      }
+
+      .innertext {
+          width: 75%;
+          padding: 10px 25px 25px;
+          border-radius: 0 0 4px 4px;
+          background-color: #000324;
+          box-shadow: 8px 9px 1px 1px rgb(19 19 19 / 9%);
+          color: #ddddde;
+          font-size: 18px;
+          margin: 15px auto;
+          line-height: 1.5rem;
+      }
+  }
+}
+
+
+@media (max-width: 870px) {
+  .lasttext {
+
+      &-firsttext {
+          width: 100%;
+      }
+  }
+}
+
+
+@media (max-width: 650px) {
+  .lasttext {
+      padding: 5px;
+
+      &-firsttext {
+
+          h2 {
+              font-size: 15px;
+              font-weight: bold;
+          }
+
+          .textcontext {
+              .watch {
+                  width: 45px;
+                  height: 45px;
+              }
+          }
+
+          .innertext {
+              font-size: 13px;
+              width: 69%;
+          }
+      }
+  }
+}

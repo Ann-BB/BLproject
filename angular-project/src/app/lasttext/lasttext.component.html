@@ -1,1 +1,26 @@
-<p>lasttext works!</p>
+<div class="lasttext" *ngIf="selectedLanguage === 'geo'">
+    <div class="lasttext-firsttext" *ngFor="let items of wordbox">
+        <div class="textcontext" (click)="iconsContent(items.id)">
+            <h2>{{items.firsttext.geo}}</h2>
+            <div
+                class="watch"
+                [style.background] = "'url('+ items.icons +')'"
+                >
+              </div>
+        </div>
+        <div *ngIf="items.watch" class="innertext">{{items.innertext.geo}}</div>
+    </div>
+</div>
+
+<div class="lasttext" *ngIf="selectedLanguage === 'eng'">
+    <div class="lasttext-firsttext" *ngFor="let items of wordbox">
+        <div class="textcontext" (click)="iconsContent(items.id)">
+            <h2>{{items.firsttext.eng}}</h2>
+            <div
+                class="watch"
+                [style.background] = "'url('+ items.icons +')'">
+              </div>
+        </div>
+        <div *ngIf="items.watch" class="innertext">{{items.innertext.eng}}</div>
+    </div>
+</div>
