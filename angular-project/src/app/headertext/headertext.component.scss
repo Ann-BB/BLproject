@@ -27,22 +27,20 @@
   }
 
   &-flags {
-      min-width: 50px;
       height: 100%;
       display: flex;
-      justify-content: flex-end;
+      justify-content: center;
       align-items: center;
 
       ul {
           transition: all 0.5s ease;
           display: flex;
           align-items: center;
-          padding: 0 4px 10px 4px;
           position: relative;
           top: 10px;
 
           &:hover {
-              padding-left: 6px;
+              padding-left:10px;
 
               .english, .georgian  {
                   max-width: 22px !important;
