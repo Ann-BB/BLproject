@@ -1,1 +1,62 @@
-<p>sliderbox works!</p>
+<div class="slider" (window:resize)="onResize()">
+    <div class="slider-box">
+      <div class="slider-boxinner" [style.left]="spaceSlider+ 'px'">
+        <div class="slider-item"
+            *ngFor="let items of sliderbox; index as i"
+            [ngClass]="{'active': i === active}">
+
+            <div class="Num" *ngIf="selectedLanguage === 'geo'">
+              {{items.numGeo}}
+            </div>
+
+            <div class="Num" *ngIf="selectedLanguage === 'eng'">
+              {{items.numEng}}
+            </div>
+            <div class="slider-percent">
+              {{items.percent}}
+            </div>
+            <div class="progressbox">
+              <span>0ლ</span>
+              <div class="progress-bar">
+                <div class="progress-bg"></div>
+              </div>
+              <span *ngIf="selectedLanguage === 'geo'">250ლ</span>
+              <span *ngIf="selectedLanguage === 'eng'">250Gel</span>
+            </div>
+          </div>
+      </div>
+    </div>
+
+
+    <div class="slider-iconsbox">
+      <div class="iconone left" (click)="iconLeft()">
+        <img src="../../assets/images/slider-leftA.png" alt="icons">
+      </div>
+      <div class="iconone right" (click)="iconRight()">
+        <img src="../../assets/images/slider-rightA.png" alt="icons">
+      </div>
+    </div>
+
+    <div class="slider-bgimg">
+        <img src="../../assets/images/leftbg.png" class="slider-bg leftbg" alt="">
+        <img src="../../assets/images/rightbg.png" class="slider-bg rightbg" alt="">
+    </div>
+  </div>
+  <div class="playbox">
+    <a
+        href="https://www.betlive.com/"
+        class="playbox-btn"
+        *ngIf="selectedLanguage === 'geo'"
+        target="_blank"
+    >
+        ითამაშე
+    </a>
+    <a
+    href="https://www.betlive.com/"
+        class="playbox-btn"
+        *ngIf="selectedLanguage === 'eng'"
+        target="_blank"
+    >
+        Play
+    </a>
+  </div>
