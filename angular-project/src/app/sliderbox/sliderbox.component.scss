@@ -182,8 +182,8 @@
       bottom: 50%;
 
       .iconone {
-          width: 60px;
-          height: 60px;
+          width: 45px;
+          height: 45px;
           background-color: rgb(255, 255, 255);
           cursor: pointer;
           color: rgb(83, 13, 99);
@@ -221,51 +221,13 @@
   }
 }
 
-@media (max-width: 1120px) {
-  .textbox {
-      max-width: 860px;
-  }
-}
-
-@media (max-width: 892px) {
-  .textbox {
-      max-width: 620px;
-
-      &-item {
-          font-size: 14px;
-      }
-  }
-}
-
-
-@media (max-width: 768px) {
-  .textbox {
-      margin-top: 46px;
-      width: 375px;
-      flex-wrap: wrap;
-      padding: 25px 20px 30px;
-      gap: 10px;
-      box-sizing: content-box;
-
-      &-content {
-          width: 100%;
-      }
-  }
-}
-
-
-@media (max-width: 500px) {
-  .textbox {
-      max-width: 69%;
-  }
-}
 
 
 @media (max-width: 1200px) {
   .slider {
       &-iconsbox {
           bottom: 55%;
-          .iconeone {
+          &-iconeone {
               width: 40px;
               height: 40px;
           }
@@ -316,7 +278,7 @@
 
       &-iconsbox {
           bottom: 55%;
-          .iconeone {
+          &-iconeone {
               width: 25px;
               height: 25px;
 

@@ -38,22 +38,22 @@ export class SliderboxComponent implements OnInit {
   ];
 
   ngAfterViewInit() {
-    if(window.innerWidth < 992 && window.innerWidth > 800) {
+    if(window.innerWidth < 970 && window.innerWidth > 800) {
       this.spaceSlider = -80;
     }
 
-    else if(window.innerWidth < 800 && window.innerWidth > 600) {
+    else if(window.innerWidth < 800 && window.innerWidth > 500) {
       this.spaceSlider = -60;
     }
 
-    else if(window.innerWidth < 600) {
+    else if(window.innerWidth < 500) {
       this.spaceSlider = -310;
     }
   };
 
 
   onResize() {
-    if(window.innerWidth < 992 && window.innerWidth > 800) {
+    if(window.innerWidth < 970 && window.innerWidth > 800) {
       this.spaceSlider = -80;
       this.active = 1;
     }
